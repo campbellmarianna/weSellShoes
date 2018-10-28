@@ -49,3 +49,53 @@ NAVBAR
 .nav-btn.right:hover {
     transform: scale(1.1) rotate(3deg);
 }
+
+/**********************
+HERO
+**********************/
+
+.hero {
+    height: calc(99vh - 50px);
+    width: 100%;
+    background: linear-gradient(rgba(44, 62, 80,.6), rgba(44, 62, 80,.6)), url('https://image.ibb.co/nyaXSK/IMG_5247.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay-text {
+    z-index: 5;
+    height: calc(100vh - 50px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-overlay-text h1 {
+    margin-top: 0rem;
+    font-size: 10rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.call-to-action-btn {
+    background-color: rgba(253, 253, 253, 1);
+    color: #616161;
+    border-radius: 40px;
+    border: 1px solid #C1C1C1;
+    padding: 10px 0;
+    text-decoration: none;
+    width: 15rem;
+    text-align: center;
+    transition: all 200ms;
+    box-shadow: 0 2px 0px rgba(0,0,0,.3);
+}
+
+.call-to-action-btn:hover {
+    /*transform: scale(1.02);*/
+    box-shadow: 0 2px 1px rgba(0,0,0,.3);
+}
