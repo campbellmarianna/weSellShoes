@@ -99,3 +99,40 @@ HERO
     /*transform: scale(1.02);*/
     box-shadow: 0 2px 1px rgba(0,0,0,.3);
 }
+
+/**************************
+clients
+**************************/
+
+.clients {
+    height: 10rem;
+    width: 100%;
+    background: #ecf0f1;
+}
+/* Get our images inline and showcase rather nicely */
+.client-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+/* Fix the heading */
+.client-header {
+    margin: 0;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: reboto;
+    font-weight: 400;
+}
+
+/* Make our images more lively by ading transitions and hover effects */
+.client-images img {
+    transition: all 200ms;
+}
+
+.client-images img:hover {
+    transform: scale(1.2);
+}
