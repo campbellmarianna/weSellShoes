@@ -110,7 +110,7 @@ clients
     background: #ecf0f1;
 }
 /* Get our images inline and showcase rather nicely */
-.client-image {
+.client-images {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -135,4 +135,73 @@ clients
 
 .client-images img:hover {
     transform: scale(1.2);
+}
+
+/*************************
+subscribe
+*************************/
+
+.subscribe {
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('https://images.pexels.com/photos/637076/pexels-photo-637076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* We give the larger header a higher font-weight so that we can tell it's a title. */
+.subsribe h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: roboto;
+    font-weight: 300;
+}
+
+/* We give the subheader a smaller font-weight so that we can tell that the h3 is a subtitle */
+.subscribe h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: roboto;
+    font-weight: 200;
+}
+
+.email-input {
+    border-radius: 4px;
+    border: solid 1px gray;
+    font-size: 2rem;
+    padding: .3rem;
+    padding-left: 1rem;
+    transition: all 200ms;
+}
+
+/* Polish Subscribe button */
+.email-sub {
+    margin-left: 1rem;
+    font-size: 2rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background: #e74c3c;
+    transition: all 200ms;
+    cursor: pointer;
+}
+
+/* Added a transition effect to both so that we can style some animations on hover */
+.email-input: hover {
+    transform: scale(1.05);
+}
+
+.email-sub:hover {
+    transform: scale(1.05);
 }
