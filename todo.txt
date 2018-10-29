@@ -1,0 +1,8 @@
+What we would like to implement:
+- The testimonials should cycle through on their own
+- As a user, I should be able to hit one of the circles to show a different testimonial
+
+Based on infer what we may need to implement:
+- we will need click event listeners
+- we will need some sort of looped action on a timer
+-
