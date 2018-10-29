@@ -372,3 +372,21 @@ and gives each ite the ability to be as tall as we want.
         margin: 0;
     }
 }
+
+/*************************
+subscribe 2
+*************************/
+
+.subscribe-2 {
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('https://images.pexels.com/photos/450059/pexels-photo-450059.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
