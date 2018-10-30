@@ -1,3 +1,38 @@
+//////////popup////////////
+
+//declare default vars
+const popUp = document.getElementById('pop-up');
+const popUpLayer = document.getElementById('pop-up-layer');
+const closeModal = document.getElementById('close-pop-up');
+
+//nav-bar button
+const subBtn = document.getElementById('sub-btn');
+
+//navbar button click makes the popup appear
+subBtn.addEventListener("click", () => {
+    popUpLayer.style.display = 'flex';
+})
+
+//closeModal click makes the popup disappear
+closeModal.addEventListener("click", function() {
+    popUpLayer.style.display = 'none';
+})
+
+//make the pop-up appear after a certain amount of time
+let popUpSeconds = 40;
+
+//trigger popup after seconds variable
+let popUpFun = window.setInterval(function() {
+    popUpLayer.style.display = 'flex';
+
+    window.clearInterval(popUpFun);
+
+}, popUpSeconds * 1000); 
+/* We multiply the popUpSeconds by 1000 because intervals
+keep track of milleseconds.
+*/
+
+
 /**************************
 testimonial section
 **************************/

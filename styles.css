@@ -1,6 +1,109 @@
 body {
     margin: 0;
+    -webkit-font-smoothing: subpixel-antialiased;
     overflow-x: hidden;
+}
+
+/*******************
+Popup
+*******************/
+/*
+We are creating an animation
+- We are specifying the state the element shoud be in at 0% of the animation,
+and then 100%.
+*/
+@keyframes hop-down {
+    0% {
+        transform:scale(.1) translateY(200px);
+    }
+
+    100% {
+        transform: scale(1) translateY(0px;)
+    }
+}
+/*
+- At the bottom of .pop-up we see some animation functions. We set the animation
+ name by calling the @keyframes we created. We can change the duration to
+ anything we want, in this case, we want our animation to be pretty quick.
+- The fill-mode of both makes our animation retain it's state before and after
+the animation occurs.
+- And the timing function of linear makes our animation move steadily. */
+.pop-up-layer {
+    opacity: 0%;
+    display: none; /* we will change this with javascript */
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: rgba(44, 62, 80,.6); /*this is our overlay color */
+    z-index: 100; /*make our layer above the rest of the page.*/
+}
+
+.pop-up {
+    position: fixed; /*this makes our pop-up attached to the screen*/
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto; /*aligns our popup to the center*/
+    height: 15rem;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #2c3e50;
+    border-radius: 16px;
+    box-shadow: 0 4px 3px rgba(0,0,0,.3);
+    z-index: 10000000; /*Makes our pop-up above everything*/
+    animation: hop-down;
+    animation-duration: 100ms;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+.pop-up-title {
+    position: absolute;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    top: 0;
+    left: 0;
+    background: white;
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-weight: 300;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    font-family: roboto;
+}
+
+.pop-up-sub {
+    padding-top: 1rem;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    font-family: roboto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 0rem;
+    margin-top: 0rem;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    font-size: 20px;
+    transition: all 200ms;
+    cursor: pointer;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding-left: 12px;
+    padding-bottom: 8px;
+    padding-top: 5px;
+    padding-right: 9px;
+}
+
+.close-btn:hover {
+    background: #c0392b;
 }
 /*******************
 NAVBAR
@@ -19,6 +122,7 @@ NAVBAR
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    font-family: roboto;
 }
 
 .nav-btn {
@@ -42,8 +146,7 @@ NAVBAR
 }
 
 .nav-btn.right {
-
-    margin-left: 85%;
+    margin-left: 80%;
     transition: all 300ms;
 }
 
