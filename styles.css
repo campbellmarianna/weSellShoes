@@ -573,3 +573,76 @@ class with JS), and when you move the mouse over it (hover) */
 .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+
+/***********************
+Footer
+***********************/
+
+.footer {
+    height: 30vh;
+    margin: 0;
+    background: #34495e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: roboto;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-cta {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-cta {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-cta p {
+    margin: 0;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.footer-links {
+    test-align: left;
+}
+
+.footer-links li {
+    list-style: none;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    text-align; left;
+}
+
+.footer-copyright {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2c3e50;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.more-links {
+    cursor: pointer;
+}
